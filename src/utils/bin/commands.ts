@@ -34,8 +34,7 @@ export const about = async (args: string[]): Promise<string> => {
 Welcome to my website!
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'resume' - my latest resume.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -44,19 +43,19 @@ export const resume = async (args: string[]): Promise<string> => {
 };
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+//export const donate = async (args: string[]): Promise<string> => {
+//  return `thank you for your interest. 
+//here are the ways you can support my work:
+//- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+//- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+//`;
+//};
 
 // Contact
-export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`);
-  return `Opening mailto:${config.email}...`;
-};
+//export const email = async (args: string[]): Promise<string> => {
+//  window.open(`mailto:${config.email}`);
+//  return `Opening mailto:${config.email}...`;
+//};
 
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
@@ -64,27 +63,27 @@ export const github = async (args: string[]): Promise<string> => {
   return 'Opening github...';
 };
 
-export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+//export const linkedin = async (args: string[]): Promise<string> => {
+//  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
 
-  return 'Opening linkedin...';
-};
+//  return 'Opening linkedin...';
+//};
 
 // Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
+//export const google = async (args: string[]): Promise<string> => {
+//  window.open(`https://google.com/search?q=${args.join(' ')}`);
+//  return `Searching google for ${args.join(' ')}...`;
+//};
 
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
-};
+//export const duckduckgo = async (args: string[]): Promise<string> => {
+//  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
+//  return `Searching duckduckgo for ${args.join(' ')}...`;
+//};
 
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
+//export const bing = async (args: string[]): Promise<string> => {
+//  window.open(`https://bing.com/search?q=${args.join(' ')}`);
+//  return `Wow, really? You are using bing for ${args.join(' ')}?`;
+//};
 
 export const reddit = async (args: string[]): Promise<string> => {
   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
@@ -96,9 +95,9 @@ export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
 };
 
-export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
-};
+//export const whoami = async (args: string[]): Promise<string> => {
+//  return `${config.ps1_username}`;
+//};
 
 export const ls = async (args: string[]): Promise<string> => {
   return `a
@@ -110,12 +109,12 @@ directories`;
 
 export const cd = async (args: string[]): Promise<string> => {
   return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+if you need help, type 'help'.`;
 };
 
-export const date = async (args: string[]): Promise<string> => {
-  return new Date().toString();
-};
+//export const date = async (args: string[]): Promise<string> => {
+//  return new Date().toString();
+//};
 
 export const vi = async (args: string[]): Promise<string> => {
   return `woah, you still use 'vi'? just try 'vim'.`;
@@ -141,14 +140,14 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+
+ █████╗ ███╗   ██╗███╗   ███╗███╗   ██╗██╗   ██╗
+██╔══██╗████╗  ██║████╗ ████║████╗  ██║██║   ██║
+███████║██╔██╗ ██║██╔████╔██║██╔██╗ ██║██║   ██║
+██╔══██║██║╚██╗██║██║╚██╔╝██║██║╚██╗██║╚██╗ ██╔╝
+██║  ██║██║ ╚████║██║ ╚═╝ ██║██║ ╚████║ ╚████╔╝ 
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═╝  ╚═══╝  ╚═══╝  
+
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
